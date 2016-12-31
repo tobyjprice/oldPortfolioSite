@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<title>Electronics</title>
+<title>Neon Dream</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -11,151 +11,15 @@
 </head>
 <body>
 <div id="page">
-	<header><h2 style="margin-left:20px;">Congo.com</h2></header>
+	<header><h2 style="margin-left:20px;">Toby Price</h2></header>
 	<nav>
 		<ul id="drop-nav">
 			<li><a href="../index.html">Home</a></li>
-			<li><a>Categories <span style="vertical-align:middle">&#x25BC;</span></a>
-				<div id="drop-menu">
-					<a href="electronics.html">Electronics</a>
-					<a href="games.html">Games</a>
-				</div>
-			</li>
-			<li class="small-menu"><a>Other <span style="vertical-align:middle">&#x25BC;</span></a>
-				<div id="drop-menu">
-					<a href="offers.html">Offers</a>
-					<a href="contact.html">Contact Us</a>
-				</div>
-			</li>
-			<div class="big-menu">
-				<li><a href="offers.html">Offers</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-			</div>
-		</ul>
-		<ul id="drop-nav" style="float: right;" onclick="basketShow()">
-			<li id="basket-show"><a>Basket</a></li>
-			
-		</ul>
 	</nav>
 	<section>
-	<h1>Electronics</h1>
-	<p style="text-align:center">Drag and drop items to add them to the basket</p>
-	<table id="product-table">
-		<tbody class="table-left">	
-			<tr class="product" data-id="25">
-				<td class="product-img"><img src="../images/ps4.jpg" class="product-img"></img></td>
-				<td class="product-det">
-					<h2>Playstation 4 500GB</h2>
-					<h3 value="274.99">&pound274.99</h3>
-					<p>In Stock</p>
-				</td> 
-			</tr>
-			<tr class="product" data-id="26">
-				<td class="product-img"><img src="../images/xbone1.jpg" class="product-img"></img></td>
-				<td class="product-det">
-					<h2>Xbox One 500GB</h2>
-					<h3 value="299.99">&pound299.99</h3>
-					<p>In Stock</p>
-				</td> 
-			</tr>
-			<tr class="product" data-id="27">
-				<td class="product-img"><img src="../images/3ds.png" class="product-img"></img></td>
-				<td class="product-det">
-					<h2>Nintendo 3DS Metallic Red</h2>
-					<h3 value="129.99">&pound129.99</h3>
-					<p>In Stock</p>
-				</td> 
-			</tr>
-			<tr class="product" data-id="28">
-				<td class="product-img"><img src="../images/k70.png" class="product-img"></img></td>
-				<td class="product-det">
-					<h2>Corsair K70 RGB Keyboard</h2>
-					<h3 value="154.99">&pound154.99</h3>
-					<p>In Stock</p>
-				</td> 
-			</tr class="product">
-		</tbody>
-		<tbody class="table-middle">	
-			<tr class="product" data-id="29">
-				<td class="product-img"><img src="../images/ps4.jpg" class="product-img"></img></td>
-				<td class="product-det">
-					<h2>Playstation 4 1TB</h2>
-					<h3 value="329.99">&pound329.99</h3>
-					<p>In Stock</p>
-				</td> 
-			</tr>
-			<tr class="product" data-id="30">
-				<td class="product-img"><img src="../images/xbone2.jpg" class="product-img"></img></td>
-				<td class="product-det">
-					<h2>Xbox One 1TB</h2>
-					<h3 value="349.99">&pound349.99</h3>
-					<p>In Stock</p>
-				</td> 
-			</tr>
-			<tr class="product" data-id="31">
-				<td class="product-img"><img src="../images/3dsxl.png" class="product-img"></img></td>
-				<td class="product-det">
-					<h2>Nintendo 3DS XL Red</h2>
-					<h3 value="139.95">&pound129.95</h3>
-					<p>In Stock</p>
-				</td> 
-			</tr>
-			<tr class="product" data-id="32">
-				<td class="product-img"><img src="../images/rival.png" class="product-img"></img></td>
-				<td class="product-det">
-					<h2>Steelseries Rival 300</h2>
-					<h3 value="51.99">&pound51.99</h3>
-					<p>In Stock</p>
-				</td> 
-			</tr class="product">
-		</tbody>
-		<tbody class="table-right">	
-			<tr class="product" data-id="33">
-				<td class="product-img"><img src="../images/ps42.jpg" class="product-img"></img></td>
-				<td class="product-det">
-					<h2>Playstation 4 Uncharted 1TB</h2>
-					<h3 value="304.99">&pound304.99</h3>
-					<p>In Stock</p>
-				</td> 
-			</tr>
-			<tr class="product" data-id="34">
-				<td class="product-img"><img src="../images/xbone3.jpg" class="product-img"></img></td>
-				<td class="product-det">
-					<h2>Xbox One Fallout Bundle 1TB</h2>
-					<h3 value="369.99">&pound369.99</h3>
-					<p>In Stock</p>
-				</td> 
-			</tr>
-			<tr class="product" data-id="35">
-				<td class="product-img"><img src="../images/2ds.png" class="product-img"></img></td>
-				<td class="product-det">
-					<h2>Nintendo 2DS White & Red</h2>
-					<h3 value="99.95">&pound99.95</h3>
-					<p>In Stock</p>
-				</td> 
-			</tr>
-			<tr class="product" data-id="36">
-				<td class="product-img"><img src="../images/deathadder.jpg" class="product-img"></img></td>
-				<td class="product-det">
-					<h2>Razer Deathadder</h2>
-					<h3 value="67.99">&pound67.99</h3>
-					<p>In Stock</p>
-				</td> 
-			</tr class="product">
-		</tbody>
-	</table>
+	<h1>Neon Dream</h1>
 	</section>
-	<aside id="basket">
-		<h1>Your Basket</h1>
-		<table id="basket-table">
-		</table>
-		<table class="basket-total-style">
-		<tr>
-			<td><h2>Total</h2></td>
-			<td style="text-align:right"><h2 id="basket-total">&pound0</h2></td>
-		</tr>
-		</table>
-	</aside>
+
 	<footer>Toby Price 2016</footer>
 </div>
 </body>
