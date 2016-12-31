@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html>
+<head>
+<title>Contact Us</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="../javascript/script.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div id="page">
+	<header><h2 style="margin-left:20px;">Congo.com</h2></header>
+	<nav>
+		<ul id="drop-nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a>Categories <span style="vertical-align:middle">&#x25BC;</span></a>
+				<div id="drop-menu">
+					<a href="electronics.html">Electronics</a>
+					<a href="games.html">Games</a>
+				</div>
+			</li>
+			<li class="small-menu"><a>Other <span style="vertical-align:middle">&#x25BC;</span></a>
+				<div id="drop-menu">
+					<a href="offers.html">Offers</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+			</li>
+			<div class="big-menu">
+				<li><a href="offers.html">Offers</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</div>
+		</ul>
+		<ul id="drop-nav" style="float: right;" onclick="basketShow()">
+			<li id="basket-show"><a>Basket</a></li>
+			
+		</ul>
+	</nav>
+	<section class="contact">
+		<h1>Contact Us</h1>
+			<table>
+				<div class="contact-link">
+					<a href="mailto:13480955@students.lincoln.ac.uk"><h2>Email</h2></a>
+				</div>
+				<div class="contact-link">
+					<a href="http://twitter.com"><h2>Twitter</h2></a>
+				</div>
+				<div class="contact-link">
+					<a href="http://facebook.com"><h2>Facebook</h2></a>
+				</div>
+				
+			</table>
+	</section>
+	<aside id="basket">
+		<h1>Your Basket</h1>
+		<table id="basket-table">
+		</table>
+		<table class="basket-total-style">
+		<tr>
+			<td><h2>Total</h2></td>
+			<td style="text-align:right"><h2 id="basket-total">&pound0</h2></td>
+		</tr>
+		</table>
+	</aside>
+	<footer>Toby Price 2016</footer>
+</div>
+</body>
+</html>

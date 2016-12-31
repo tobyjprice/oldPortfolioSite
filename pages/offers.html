@@ -1,0 +1,162 @@
+<!doctype html>
+
+<html>
+<head>
+<title>Offer</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="../javascript/script.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div id="page">
+	<header><h2 style="margin-left:20px;">Congo.com</h2></header>
+	<nav>
+		<ul id="drop-nav">
+			<li><a href="../index.html">Home</a></li>
+			<li><a>Categories <span style="vertical-align:middle">&#x25BC;</span></a>
+				<div id="drop-menu">
+					<a href="electronics.html">Electronics</a>
+					<a href="games.html">Games</a>
+				</div>
+			</li>
+			<li class="small-menu"><a>Other <span style="vertical-align:middle">&#x25BC;</span></a>
+				<div id="drop-menu">
+					<a href="offers.html">Offers</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+			</li>
+			<div class="big-menu">
+				<li><a href="offers.html">Offers</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</div>
+		</ul>
+		<ul id="drop-nav" style="float: right;" onclick="basketShow()">
+			<li id="basket-show"><a>Basket</a></li>
+			
+		</ul>
+	</nav>
+	<section>
+	<h1>Offers</h1>
+	<p style="text-align:center">Drag and drop items to add them to the basket</p>
+	<table id="product-table">
+		<tbody class="table-left">	
+			<tr class="product" data-id="1">
+				<td class="product-img"><img src="../images/ipod1.png" class="product-img"></img></td>
+				<td class="product-det">
+					<h2>iPod Touch (Blue) 16gb</h2>
+					<h3 value="128">&pound128</h3>
+					<p style="color:red">20% off</p>
+				</td> 
+			</tr>
+			<tr class="product" data-id="2">
+				<td class="product-img"><img src="../images/ipod2.png" class="product-img"></img></td>
+				<td class="product-det">
+					<h2>iPod Touch (Silver) 32gb</h2>
+					<h3 value="159">&pound159</h3>
+					<p style="color:red">20% off</p>
+				</td> 
+			</tr>
+			<tr class="product" data-id="3">
+				<td class="product-img"><img src="../images/ipod4.png" class="product-img"></img></td>
+				<td class="product-det">
+					<h2>iPod Touch(Space Grey) 16gb</h2>
+					<h3 value="128">&pound128</h3>
+					<p style="color:red">20% off</p>
+				</td> 
+			</tr>
+			<tr class="product" data-id="4">
+				<td class="product-img"><img src="../images/ipod5.png" class="product-img"></img></td>
+				<td class="product-det">
+					<h2>iPod Touch (Pink) 32gb</h2>
+					<h3 value="159">&pound159</h3>
+					<p style="color:red">25% off</p>
+				</td> 
+			</tr class="product">
+		</tbody>
+		<tbody class="table-middle">	
+			<tr class="product" data-id="5">
+				<td class="product-img"><img src="../images/ipod1.png" class="product-img"></img></td>
+				<td class="product-det">
+					<h2>iPod Touch (Blue) 32gb</h2>
+					<h3 value="159">&pound159</h3>
+					<p style="color:red">25% off</p>
+				</td> 
+			</tr>
+			<tr class="product" data-id="6">
+				<td class="product-img"><img src="../images/ipod3.png" class="product-img"></img></td>
+				<td class="product-det">
+					<h2>iPod Touch (Gold) 16gb</h2>
+					<h3 value="128">&pound128</h3>
+					<p style="color:red">25% off</p>
+				</td> 
+			</tr>
+			<tr class="product" data-id="7">
+				<td class="product-img"><img src="../images/ipod4.png" class="product-img"></img></td>
+				<td class="product-det">
+					<h2>iPod Touch (Space Grey) 32gb</h2>
+					<h3 value="159">&pound159</h3>
+					<p style="color:red">30% off</p>
+				</td> 
+			</tr>
+			<tr class="product" data-id="8">
+				<td class="product-img"><img src="../images/ipod6.png" class="product-img"></img></td>
+				<td class="product-det">
+					<h2>iPod Touch (Red) 16gb</h2>
+					<h3 value="128">&pound128</h3>
+					<p style="color:red">30% off</p>
+				</td> 
+			</tr class="product">
+		</tbody>
+		<tbody class="table-right">	
+			<tr class="product" data-id="9">
+				<td class="product-img"><img src="../images/ipod2.png" class="product-img"></img></td>
+				<td class="product-det">
+					<h2>iPod Touch (Silver) 16gb</h2>
+					<h3 value="128">&pound128</h3>
+					<p style="color:red">30% off</p>
+				</td> 
+			</tr>
+			<tr class="product" data-id="10">
+				<td class="product-img"><img src="../images/ipod3.png" class="product-img"></img></td>
+				<td class="product-det">
+					<h2>iPod Touch (Gold) 32gb</h2>
+					<h3 value="159">&pound159</h3>
+					<p style="color:red">35% off</p>
+				</td> 
+			</tr>
+			<tr class="product" data-id="11">
+				<td class="product-img"><img src="../images/ipod5.png" class="product-img"></img></td>
+				<td class="product-det">
+					<h2>iPod Touch (Pink) 16gb</h2>
+					<h3 value="128">&pound128</h3>
+					<p style="color:red">30% off</p>
+				</td> 
+			</tr>
+			<tr class="product" data-id="12">
+				<td class="product-img"><img src="../images/ipod6.png" class="product-img"></img></td>
+				<td class="product-det">
+					<h2>iPod Touch (Red) 32gb</h2>
+					<h3 value="159">&pound159</h3>
+					<p style="color:red">35% off</p>
+				</td> 
+			</tr>
+		</tbody>
+	</table>
+	</section>
+	<aside id="basket">
+		<h1>Your Basket</h1>
+		<table id="basket-table">
+		</table>
+		<table class="basket-total-style">
+		<tr>
+			<td><h2>Total</h2></td>
+			<td style="text-align:right"><h2 id="basket-total">&pound0</h2></td>
+		</tr>
+		</table>
+	</aside>
+	<footer>Toby Price 2016</footer>
+</div>
+</body>
+</html>

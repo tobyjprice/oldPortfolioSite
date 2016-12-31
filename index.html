@@ -1,6 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
+<head>
+<title>Home</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+<script src="javascript/script.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 <body>
-<h1> HELLO WORLD </h1>
+<div id="page">
+	<header><h2 style="margin-left:20px;">Congo.com</h2></header>
+	<nav>
+		<ul id="drop-nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a>Categories <span style="vertical-align:middle">&#x25BC;</span></a>
+				<div id="drop-menu">
+					<a href="pages/electronics.html">Electronics</a>
+					<a href="pages/games.html">Games</a>
+				</div>
+			</li>
+			<li class="small-menu"><a>Other <span style="vertical-align:middle">&#x25BC;</span></a>
+				<div id="drop-menu">
+					<a href="pages/offers.html">Offers</a>
+					<a href="pages/contact.html">Contact Us</a>
+				</div>
+			</li>
+			<div class="big-menu">
+				<li><a href="pages/offers.html">Offers</a></li>
+				<li><a href="pages/contact.html">Contact Us</a></li>
+			</div>
+		</ul>
+		<ul id="drop-nav" style="float: right;" onclick="basketShow()">
+			<li id="basket-show"><a>Basket</a></li>
+			
+		</ul>
+	</nav>
+	<section>
+	<h1>Home</h1>
+	<table id="offer-table">
+		<tr>
+			<td>
+				<a href="pages/offers.html"><img src="images/ipodSplash.jpg"></img></a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="pages/electronics.html"><img src="images/ps4Splash.png"></img></a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="pages/games.html"><img src="images/blops3Splash.jpg"></img></a>
+			</td>
+		</tr>
+	</table>
+	</section>
+	<aside id="basket">
+		<h1>Your Basket</h1>
+		<table id="basket-table">
+		</table>
+		<table class="basket-total-style">
+		<tr>
+			<td><h2>Total</h2></td>
+			<td style="text-align:right"><h2 id="basket-total">&pound0</h2></td>
+		</tr>
+		</table>
+	</aside>
+	<footer>Toby Price 2016</footer>
+</div>
 </body>
 </html>
