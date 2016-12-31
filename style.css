@@ -128,50 +128,6 @@ aside table tr td {
 	word-wrap:break-word;
 }
 
-.basket-price {
-	width: 70px;
-}
-
-.basket-count {
-	width: 15px;
-	padding: 0px 5px 0px 5px;
-}
-
-.basket-count input{
-	width: 15px;
-	height: 15px;
-}
-
-.basket-del {
-	width: 15px;
-	padding: 0px;
-}
-
-.basket-del button{
-	text-align: center;
-	vertical-align: middle;
-	width: 15px;
-	height: 20px;
-	padding: 0px;
-	cursor: pointer;
-}
-
-.basket-target {
-	background-color: #1a7aff;
-}
-
-.basket-hover {
-	background-color: #b3d3ff;
-}
-
-.basket-total-style {
-	border-top: solid;
-	border-color: lightgrey;
-	border-width: 1px;
-	margin-top: 20px;
-	margin-bottom:0px;
-}
-
 section {
 	min-height: 800px;
 	padding: 10px;
