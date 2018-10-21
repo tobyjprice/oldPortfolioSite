@@ -5,26 +5,39 @@ body {
 }
 
 #page {
-	margin-top: 100px;
+	
 }
 
 header {
-	color: white;
+	color: black;
 	height: 80px;
 	width: 100%;
 	padding: 0px;
-	background-color: #001B40;
-	position: fixed;
 	top: 0px;
+	position: fixed;
+	background-color: rgba(255,255,255,0.5);
+	z-index:1;
+}
+
+h1 {
+	margin-left: 20px;
+	font-weight: bold;
+	line-height: 10px;
+	font-style: normal;
+}
+
+h2 {
+	margin-left: 20px;
+	line-height: 20px;
+	font-weight: 100;
 }
 
 nav {
 	height: 50px;
-	width: 100%;
-	background-color: #001B40;
-	color:white;
-	position: fixed;
-	top: 50px;
+	width: 80%;
+	color:black;
+	
+	top: 0px;
 }
 
 nav ul {
@@ -54,7 +67,7 @@ nav ul li a {
 	text-align: left;
 	float: left;
 	position: absolute;
-	margin: 0px 0px 0px -10px;
+	margin: 10px 0px 0px 0px;
 }
 
 #drop-menu a {
@@ -95,156 +108,45 @@ nav ul li a {
 	margin: 0px;
 }
 
-aside {
-	display: none;
-	width: 300px;
-	min-height: 100px;
-	position: fixed;
-	right: 0px;
-	top: 100px;
-	background-color: #003E94;
-	border-color: lightgrey;
-	border-style: none none solid solid;
-	border-width: 0px;
-	color: white;
-}
-
-aside h1 {
-	text-align: center;
-}
-
-aside table {
-	margin: 10px;
-	width: 280px;
-	table-layout:fixed;
-}
-
-aside table tr{
-	display: table-row;
-	height: 50px;
-}
-
-aside table tr td {
-	word-wrap:break-word;
-}
-
-.basket-price {
-	width: 70px;
-}
-
-.basket-count {
-	width: 15px;
-	padding: 0px 5px 0px 5px;
-}
-
-.basket-count input{
-	width: 15px;
-	height: 15px;
-}
-
-.basket-del {
-	width: 15px;
-	padding: 0px;
-}
-
-.basket-del button{
-	text-align: center;
-	vertical-align: middle;
-	width: 15px;
-	height: 20px;
-	padding: 0px;
-	cursor: pointer;
-}
-
-.basket-target {
-	background-color: #1a7aff;
-}
-
-.basket-hover {
-	background-color: #b3d3ff;
-}
-
-.basket-total-style {
-	border-top: solid;
-	border-color: lightgrey;
-	border-width: 1px;
-	margin-top: 20px;
-	margin-bottom:0px;
-}
-
 section {
+	margin-top: 100px;
 	min-height: 800px;
-	padding: 10px;
-	max-width: 1250px;
-	margin: auto;
 }
 
 section h1 {
 	text-align: center;
 }
 
-#product-table {
-	max-width: 2000px;
+#project-table {
 	table-layout: fixed;
+	padding: 0px;
+	width: 100%;
 }
-
-#product-table td{
-	width: 180px;
+#project-table tbody{
+	left: -2px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	
+}
+#project-table td{
+	
+	width: 100%;
 	height: 180px;
+	padding: 0px;
 	border-style: none none solid none;
 	border-color: lightgrey;
-	border-width: 1px;
+	border-width: 0px;
 	word-wrap:break-word;
 }
 
-.small-menu {
-	display: none;
+#project-table td img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.table-left {
-	float:left;
-}
 
-.table-middle {
-	float:left; 
-}
-
-.table-right {
-	float:left;
-}
-
-.dragged {
-	opacity: 0.6;
-	position: absolute;
-	z-index: 1;
-	border-style: solid;
-	border-color: lightgrey;
-	border-width: 1px;
-}
-
-.dragged td {
-	border-style: none;
-}
-
-.dragged .product-add {
-	display: none;
-}
-
-.product-img {
-	padding: 0px;
-	max-width: 200px;
-	max-height: 180px;
-}
-
-.product-det {
-	padding: 10px;
-	vertical-align: text-top;
-}
-
-.product-submit {
-	width: 60px;
-	height: 30px;
-}
 
 #offer-table {
 	width: 100%;
@@ -255,34 +157,8 @@ section h1 {
 }
 
 #offer-table img {
-		width: 100%;
-		height: auto;
-}
-
-.contact {
-	max-width: 600px;
-}
-
-.contact table{
 	width: 100%;
-}
-
-.contact-link {
-	background-color: #001B40;
-	height: 50px;
-}
-
-.contact-link:hover{
-	background-color: #003E94;
-	height: 50px;
-}
-
-.contact-link a{
-	text-decoration: none;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 50px;
-	color: white;
+	height: auto;
 }
 
 footer {
