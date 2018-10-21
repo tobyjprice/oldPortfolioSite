@@ -5,112 +5,78 @@ body {
 }
 
 #page {
-	
+	background-color: white;
 }
 
 header {
-	color: black;
-	height: 80px;
+	color: white;
+	height: 140px;
 	width: 100%;
 	padding: 0px;
 	top: 0px;
-	position: fixed;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(0,0,0,1);
 	z-index:1;
 }
 
 h1 {
-	margin-left: 20px;
 	font-weight: bold;
-	line-height: 10px;
 	font-style: normal;
+	font-size: 50px;
+	text-align: center;
+	line-height: 20px;
+	margin: 0;
+	padding-top: 40px;
 }
 
 h2 {
-	margin-left: 20px;
 	line-height: 20px;
 	font-weight: 100;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 10px;
 }
 
 nav {
-	height: 50px;
-	width: 80%;
-	color:black;
-	
-	top: 0px;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	text-align: center;
+	background-color: rgba(0,0,0,0.8);
 }
 
 nav ul {
 	list-style:none;
-	padding: 0px;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background-color: red;
+	display: inline-block;
 }
 
 nav ul li {
-	display: block;
-	position: relative;
 	float: left;
-	font-size: 16px;
-	vertical-align: text-middle;
+	width: 100px;
 }
 
 nav ul li a {
-	display: block;
 	padding: 5px 10px 5px 10px;
 	text-decoration: none;
-	height: 30px;
-}
-
-#drop-menu {
-	display: none;
-	background-color: #001B40;
-	width: 140px;
-	text-align: left;
-	float: left;
-	position: absolute;
-	margin: 10px 0px 0px 0px;
-}
-
-#drop-menu a {
-	height: 20px;
-}
-
-#drop-nav li:hover #drop-menu {
 	display: block;
-}
-
-#drop-nav li:hover {
-	cursor: pointer;
-	background-color: #003E94 !important;
-}
-
-#drop-nav li #drop-menu a:hover {
-	cursor: pointer;
-	background-color: #003E94;
-}
-
-#drop-nav li {
-	padding: 10px;
-	height: 30px;
-	text-align: center;
-	
-	/* Prevent buttons text from being selected */
-	-webkit-user-select: none;  /* Chrome all / Safari all */
-	-moz-user-select: none;     /* Firefox all */
-	-ms-user-select: none;      /* IE 10+ */
-}
-
-#drop-nav {
-	margin: 0px;
-}
-
-#drop-nav a{
 	color: white;
-	margin: 0px;
+}
+nav ul li a:hover {
+	background-color: white;
+}
+section {
+	margin-top: -32px;
+	padding-top: 0px;
+	background-color: black;
 }
 
-section {
-	margin-top: 100px;
-	min-height: 800px;
+section div {
+	background-color:black;
+	height:50px;
+	z-index: 1;
 }
 
 section h1 {
@@ -121,23 +87,22 @@ section h1 {
 	table-layout: fixed;
 	padding: 0px;
 	width: 100%;
+
 }
 #project-table tbody{
-	left: -2px;
-	margin: 0px;
-	padding: 0px;
-	position: relative;
-	
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+#project-table tr{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
 #project-table td{
-	
+	margin-left: auto;
+	margin-right: auto;
 	width: 100%;
-	height: 180px;
-	padding: 0px;
-	border-style: none none solid none;
-	border-color: lightgrey;
-	border-width: 0px;
-	word-wrap:break-word;
 }
 
 #project-table td img{
