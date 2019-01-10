@@ -138,7 +138,7 @@ body {
   }
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (max-device-width: 700px) {
     nav ul li {
       display: block;
     }
