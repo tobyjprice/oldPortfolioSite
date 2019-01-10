@@ -4,7 +4,6 @@
 
 header {
 	color: white;
-	height: 130px;
 	width: 900px;
 	padding: 0px;
 	margin: 0 auto;
@@ -26,11 +25,10 @@ h1 {
 }
 
 h2 {
-	line-height: 20px;
 	font-weight: 1;
 	text-align: center;
 	font-size: 20;
-	padding-top: 10px;
+  padding: 10px 10px 20px 10px;
 	color: grey;
 }
 
@@ -56,6 +54,7 @@ nav ul li {
 	margin: 0 auto;
 	display: inline-block;
 	vertical-align: top;
+  font-size: medium;
 }
 
 nav ul li a {
@@ -118,4 +117,10 @@ body {
     width: 100%;
     padding: 0;
   }
+}
+
+@media screen and (max-width: 700px) {
+    nav ul li {
+      display: block;
+    }
 }
