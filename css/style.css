@@ -82,6 +82,7 @@ nav ul li {
 	display: inline-block;
 	vertical-align: top;
   font-size: medium;
+  background-color: #FA7268;
 }
 
 nav ul li a {
