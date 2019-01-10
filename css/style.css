@@ -139,6 +139,11 @@ body {
 }
 
 @media only screen and (max-device-width: 700px) {
+    .column, nav, header {
+      width: 100%;
+      padding: 0;
+    }
+
     nav ul li {
       display: block;
     }
