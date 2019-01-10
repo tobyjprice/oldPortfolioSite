@@ -1,23 +1,17 @@
-body {
-	margin: 0px;
-	padding: 0px;
-	font-family:sans-serif;
-}
-
-#page {
-	background-color: white;
+* {
+  box-sizing: border-box;
 }
 
 header {
 	color: white;
 	height: 140px;
-	width: 100%;
+	width: 1000px;
 	padding: 0px;
+	margin: 0 auto;
 	top: 0px;
-	background-color: rgba(0,0,0,1);
+	background-color: white;
 	z-index:1;
 }
-
 h1 {
 	font-weight: bold;
 	font-style: normal;
@@ -26,14 +20,15 @@ h1 {
 	line-height: 20px;
 	margin: 0;
 	padding-top: 40px;
+	color: black;
 }
-
 h2 {
 	line-height: 20px;
 	font-weight: 100;
 	text-align: center;
 	font-size: 20px;
 	padding-top: 10px;
+	color: black;
 }
 
 nav {
@@ -41,120 +36,91 @@ nav {
 	position: sticky;
 	top: 0;
 	text-align: center;
-	background-color: rgba(0,0,0,0.8);
+	background-color: #FA7268;
+	width: 1000px;
+	margin: 0 auto;
 }
 
 nav ul {
-	list-style:none;
+	list-style: none;
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	overflow: hidden;
-	background-color: red;
-	display: inline-block;
+	background-color: none;
 }
 
 nav ul li {
-	float: left;
+	margin: 0 auto;
 	width: 100px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 nav ul li a {
 	padding: 5px 10px 5px 10px;
 	text-decoration: none;
 	display: block;
-	color: white;
+	color: black;
 }
 nav ul li a:hover {
-	background-color: white;
-}
-section {
-	margin-top: -32px;
-	padding-top: 0px;
-	background-color: black;
+	background-color: rgba(255,255,255,0.2);
 }
 
-section div {
-	background-color:black;
-	height:50px;
-	z-index: 1;
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
 }
 
-section h1 {
-	text-align: center;
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
 }
 
-#project-table {
-	table-layout: fixed;
-	padding: 0px;
-	width: 100%;
-
-}
-#project-table tbody{
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
-#project-table tr{
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
-#project-table td{
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  margin: 0 auto;
+  width: 1000px;
 }
 
-#project-table td img{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
 }
 
-
-
-#offer-table {
-	width: 100%;
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
 }
 
-#offer-table tr{
-	height: 300px;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-#offer-table img {
-	width: 100%;
-	height: auto;
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
 }
 
-footer {
-	text-align: center;
-	color: grey;
-	margin-top: 100px;
-	padding:10px;
-	border-color: lightgrey;
-	border-style: solid none none none;
-	border-width: 1px;
-}
-
-@media screen and (min-width: 1450px) {
-	
-	aside {
-		display: block;
-	}
-	
-	#basket-show {
-		background-color: #003E94;
-	}
-}
-
-@media screen and (max-width: 650px) {
-	
-	.small-menu {
-		display: block;
-	}
-	
-	.big-menu {
-		display: none;
-	}
-	
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
 }
