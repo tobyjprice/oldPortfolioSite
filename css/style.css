@@ -59,6 +59,11 @@ h6 {
   margin: 0px;
 }
 
+h7 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
 nav {
   top: 20;
 	text-align: center;
