@@ -73,7 +73,7 @@ h8 {
 
 nav {
   top: 20;
-	background-color: #FA7268;
+	background-color: #FCAD48;
 	width: 900px;
 	margin: 0 auto;
   margin-top: 20px;
@@ -94,7 +94,7 @@ nav ul li {
 	display: inline-block;
 	vertical-align: top;
   font-size: medium;
-  background-color: #FA7268;
+  background-color: none;
 }
 
 nav ul li a {
@@ -161,12 +161,14 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
+  color: grey;
 }
 
 .sectionTitle {
   text-align: center;
   background-color: none;
   font-size: 30px;
+  color: grey;
 }
 
 .avatar {
