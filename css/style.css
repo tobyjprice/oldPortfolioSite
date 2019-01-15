@@ -7,6 +7,7 @@ header {
 	width: 900px;
 	padding: 0px;
 	margin: 0 auto;
+  text-align: center;
 	top: 0px;
 	background-color: none;
 	z-index:1;
@@ -27,7 +28,7 @@ h2 {
 	font-weight: 1;
 	text-align: center;
 	font-size: 20;
-  padding: 0px 10px 20px 10px;
+  padding: 0px 10px 0px 0px;
 	color: grey;
 }
 
@@ -64,9 +65,14 @@ h7 {
   font-weight: bold;
 }
 
+h8 {
+  margin: 0 auto;
+  text-align: center;
+  color:grey;
+}
+
 nav {
   top: 20;
-	text-align: center;
 	background-color: #FA7268;
 	width: 900px;
 	margin: 0 auto;
@@ -76,9 +82,10 @@ nav {
 
 nav ul {
 	list-style: none;
+  text-align: left;
 	padding: 0;
 	margin: 0 auto;
-	overflow: hidden;
+  display: inline;
 	background-color: none;
 }
 
@@ -96,8 +103,18 @@ nav ul li a {
 	display: block;
 	color: white;
 }
+
 nav ul li a:hover {
 	background-color: rgba(255,255,255,0.2);
+}
+
+nav ul li a img {
+  vertical-align: middle;
+  max-height: 22px;
+}
+
+.navImg {
+  padding: 10px;
 }
 
 /* Add a gray background color with some padding */
@@ -124,6 +141,22 @@ body {
    width: 100%;
 }
 
+.cardContainer {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactCard {
+   background-color: white;
+   padding: 20px;
+   margin: 20px;
+   box-shadow:  0px 4px 8px #888888;
+   display: inline-block;
+   width: 200px;
+   height: 200px;
+}
+
 /* Footer */
 .footer {
   padding: 20px;
@@ -131,9 +164,9 @@ body {
 }
 
 .sectionTitle {
+  text-align: center;
   background-color: none;
   font-size: 30px;
-  text-align: center;
 }
 
 .avatar {
@@ -146,8 +179,13 @@ body {
   box-shadow: 0px 4px 8px #888888;
 }
 
+#rightNav {
+  display: inline-block;
+  float: right;
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
   .column, nav, header {
     width: 100%;
     padding: 0;
@@ -155,18 +193,32 @@ body {
 }
 
 @media screen and (max-width: 400px) {
-    .column, nav, header {
+    .column, nav, header, #rightNav {
       margin: auto;
       width: 100%;
       padding: 0;
+      text-align: center;
     }
 
     body {
       margin: 0;
     }
 
+    #rightNav {
+      float:none;
+      text-align: center;
+    }
+
+    #rightNav li {
+      display: block;
+    }
+
     nav ul li {
       display: block;
+    }
+
+    nav ul {
+      text-align: center;
     }
 
     .avatar {
