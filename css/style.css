@@ -117,6 +117,11 @@ nav ul li a img {
   padding: 10px;
 }
 
+.portImg {
+  box-shadow: 0px 4px 8px #888888;
+  width: 100%;
+}
+
 /* Add a gray background color with some padding */
 body {
   font-family: Arial;
