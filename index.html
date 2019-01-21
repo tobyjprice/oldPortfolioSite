@@ -52,19 +52,49 @@
 				<h3 class="cardHeader">Wave Surfer</h3>
 				<h4>An SDL game created in collaboration with Alywn Owen during Global Game Jam 2017</h4>
 				<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/6j-jPQxCVK8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>Some text..</p>
+				<p>Wave Surfer was a project I worked on with Alwyn Owen during our time at University.  Created as part of Global Game Jam 2017.  Building off the work we had both done using SDL in the Games Programming module, we again used SDL to create Wave Surfer.  The theme for the game jam was 'waves' and after bouncing a few ideas around potentially involving sound waves we settled on using the wave itself for the design of levels.  As seen in the game a sine wave makes up the formation of the ground and the level.</p>
 			</div>
 			<div class="card">
 				<h3 class="cardHeader">OpenGL Space Invaders</h3>
 				<h4>A Space Invaders Clone written in C++ and rendered using SDL and OpenGL</h4>
 				<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/SCJ4UHw1naA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>Some text..</p>
+				<p>A continuation of the Games Programming module, Graphics, focussed on using SDL to create a Space Invaders clone.  At first in 2D using SDL as before, but then converting that to an OpenGL project and rendering the game objects in 3D. </p>
+				<h5>Key Features</h5>
+				<ul>
+					<li>
+						<h6>Loading 3D models</h6>
+						<p>Assimp was used to load the models into the game, loading the vertices from the models provided.  The system also loaded diffuse maps and specular maps generated alongside the models.  These models were then stored in a map so that could be accessed by the renderer when required.</p>
+					</li>
+					<li>
+						<h6>Shaders & lighting</h6>
+						<p>A second key element to the transition to 3D is the need for shaders and lighting.  Each object has both diffuse mapping and specular mapping, resulting in distinct areas on the models where the lighting behaves slightly differently.  This is highlighted well as the bullet fired by the player emits a light source.  A simple version of Phong shading was implemented for the lighting. </p>
+					</li>
+					<li>
+						<h6>Rendering</h6>
+						<p>The game supports both the rendering of 3D objects as well as 2D sprites.  The sprites however are faked by simply rendering the 2D texture onto a rectangle.  This provides the rendering backbone for the UI.  This UI layer is also projected orthographically instead of using perspective as the rest of the scene would.</p>
+					</li>
+				</ul>
 			</div>
 			<div class="card">
 				<h3 class="cardHeader">PhysX Golf</h3>
 				<h4>An exploration of PhysX and its application in simulating a mini-golf game</h4>
 				<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/Pxxyae1bfEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>Some text..</p>
+				<p>For the Physics Simulation module we were tasked with using Nvidia's PhysX to create a mini golf game.  Similar to those such as 'Golf With Your Friends' or 'Golf It!'.  Currently the project only uses the PhysX debug renderer to view and play the game.  In building this project I explored the PhysX SDK's Physics module, using the Actor class to build the various elements in the game.</p>
+				<h5>Key Features</h5>
+				<ul>
+					<li>
+						<h6>Joints</h6>
+						<p>Joints were used heavily in both the construction of the windmill as well as extensively used in the creation of the 'player controller'.</p>
+					</li>
+					<li>
+						<h6>Player Controls</h6>
+						<p>A defining feature of my take on this game, was the use of a physical 'club' that the player uses to hit the ball.  This was based on a series of joints arranged in a way that allows the player to control direction and power.  The head of the club sits on a revolute joint attached to the 'player' this allows the head to swing forward and backward along the x-axis of the player.  The 'player' is then attached to another joint that is centred on the ball.  This gives the player the ability to rotate around the ball and choose a direction.</p>
+					</li>
+					<li>
+						<h6>Custom Objects</h6>
+						<p>As well as constructing the level out of standard boxes and capsules that PhysX provides, a custom object was also imported and used.  The bumps seen in the level were custom objects modelled in blender, the vertices of which were then copied into the simulation.  Originally meant as a tunnel it was repurposed as bumps.</p>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
